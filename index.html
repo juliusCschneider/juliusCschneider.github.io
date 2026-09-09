@@ -7,8 +7,8 @@
 
   <!-- Typefaces matching reference design -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 
   <style>
     :root {
@@ -46,13 +46,25 @@
 
     /* Understated, elegant header */
     h1 {
-      font-family: "Fraunces", serif;
-      font-size: 2.35rem;
-      font-weight: 500;
-      line-height: 1.2;
-      letter-spacing: -0.015em;
-      color: var(--ink);
-      margin-bottom: 8px;
+    font-family: "Playfair Display", Georgia, serif;
+    font-optical-sizing: auto;
+    font-size: 2.4rem;
+    font-weight: 600; /* Adjust between 400 and 700 to match your taste */
+    line-height: 1.2;
+    letter-spacing: -0.015em;
+    color: var(--ink);
+    margin-bottom: 8px;
+    }
+
+    h2 {
+    font-family: "Playfair Display", Georgia, serif;
+    font-optical-sizing: auto;
+    font-size: 1.75rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin-bottom: 24px;
+    color: var(--ink);
     }
 
     .meta {
@@ -87,15 +99,6 @@
       margin: 48px 0;
     }
 
-    h2 {
-      font-family: "Fraunces", serif;
-      font-size: 1.75rem;
-      font-weight: 500;
-      line-height: 1.2;
-      letter-spacing: -0.01em;
-      margin-bottom: 24px;
-      color: var(--ink);
-    }
 
     /* Publications List */
     .paper-entry {
@@ -219,14 +222,14 @@
 
   <section>
     <p>
-      I study computer science with a focus on <em>computer vision</em>, <em>robotics</em>, and <em>autonomous systems</em>. Most of my work centers around state estimation, real-time perception pipelines, and physics-based simulations for machine learning.
+      I am a Computer Vision researcher working on the intersection of<em>computer vision</em> and <em>robotics</em> in <em>autonomous systems</em>. Most of my work centers around state estimation, real-time perception pipelines, and physics-based simulations for UAVs.
     </p>
   </section>
 
   <hr>
 
   <section>
-    <h2>Selected papers & reports</h2>
+    <h2>Selected papers</h2>
 
     <div class="paper-entry">
       <div class="paper-year">2026</div>
@@ -235,7 +238,6 @@
         <div class="paper-meta">Technical Report (2026)</div>
         <div class="paper-actions">
           <a href="papers/MIVE_DronePoseEstimation_JCS.pdf" target="_blank" rel="noopener">PDF</a>
-          <a href="https://github.com/juliusCschneider" target="_blank" rel="noopener">Code</a>
         </div>
       </div>
     </div>
@@ -244,6 +246,9 @@
   <hr>
 
   <footer>
+    <p>
+      Besides my research, I often think about the deployment of novel technologies to protect human lives. Both on and off the battlefield, alongside a broader interests in politics and philosophy. I also spend my time playing tennis and working toward my helicopter pilot license.
+    </p>
     <p>
       Feel free to reach out if you are interested in collaboration, thesis projects, or discussions.
     </p>
